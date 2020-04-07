@@ -689,7 +689,7 @@ html, body {
       }
 
       &-slide {
-        color: #1c433f;
+        color: #ffffff;
         font-size: 13px;
         font-weight: 700;
         letter-spacing: 0.26px;
@@ -709,10 +709,12 @@ html, body {
         span {
           width: 110px;
           display: inline-block;
+          color: #7c4fa7;
 
           &:last-child {
             width: auto;
             font-weight: 700;
+            color: #ffffff;
           }
         }
 
@@ -726,21 +728,21 @@ html, body {
         line-height: 26px;
         height: 176px;
         overflow: hidden;
+        color: #9b9db4;
       }
     }
 
     &__header {
-      text-transform: uppercase;
-      font-size: 48px;
+      font-size: 40px;
       font-weight: 900;
-      color: #141414;
+      color: #ffffff;
       margin: 0;
     }
 
     &__subheader {
       font-size: 20px;
       font-weight: 400;
-      color: #1c433f;
+      color: #9b9db4;
       margin: -5px 0 40px;
     }
 
@@ -780,6 +782,7 @@ html, body {
         font-size: 40px;
         font-weight: 700;
         margin: 0;
+        color: #ffffff;
       }
 
       &__poster {
@@ -787,7 +790,7 @@ html, body {
       }
 
       &__content {
-        padding: 73px 54px 94px 37px;
+        padding: 73px 54px 94px 0px;
 
         &--left {
           padding-right: 60px;
@@ -798,11 +801,13 @@ html, body {
         margin: 0 0 38px;
         font-size: 30px;
         font-weight: 700;
+        color: #9b9db4;
       }
 
       &__text {
         margin: 0 0 38px;
         font-size: 20px;
+        color: #9b9db4;
 
         &:last-child {
           margin-bottom: 0;
@@ -810,13 +815,14 @@ html, body {
       }
 
       &__subposter {
-        margin-left: -36px;
+        margin-left: 0px;
         margin-bottom: 63px;
       }
 
       &__quote {
-        margin: 95px 38px;
-        color: #57eeab;
+        padding: 50px 64px;
+        color: #ffffff;
+        border: 4px solid #ffffff;
         font-weight: 700;
         font-size: 30px;
       }
