@@ -93,7 +93,7 @@ gulp.task('image-min', function () {
  * Образец: в index.pug передаются данные из index.pug.json
  */
 gulp.task('pug', function () {
-	return gulp.src('./src/*.pug')
+	return gulp.src('./src/**/**/*.pug')
 	.pipe(plumber())
 	.pipe(pug({pretty: true}))
 	.pipe(gulp.dest(paths.public))
@@ -182,7 +182,7 @@ gulp.task('watch', function () {
 	gulp.watch(paths.input.sass + '**/*.scss', ['sass']);
 	gulp.watch(paths.input.js + '**/*.js', ['javascript']);
 	gulp.watch(paths.input.images + '**/*', ['image-min']);
-	gulp.watch(['./src/*.pug'], ['pug']);
+	gulp.watch(['./src/**/**/*.pug'], ['pug']);
 });
 
 /**
