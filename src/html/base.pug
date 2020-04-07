@@ -61,6 +61,7 @@ html
     script.
       var owl = $('.showlaxy-main-slider');
       var owl2 = $('.showlaxy-main-block__container-carousel')
+      var owl3 = $('.showlaxy-main-block__container-animate')
       owl.owlCarousel({
           center: true,
           items: 2,
@@ -70,9 +71,6 @@ html
       });
       $('.showlaxy-main-slide__next').click(function() {
           owl.trigger('next.owl.carousel', [300]);
-      })
-      $('.showlaxy-main-slide__prev').click(function() {
-          owl.trigger('prev.owl.carousel', [300]);
       })
 
       var video = $("video"),
@@ -105,4 +103,15 @@ html
       })
       $('.showlaxy-main-block__carousel-left').click(function() {
           owl2.trigger('prev.owl.carousel', [300]);
+      })
+
+      owl3.owlCarousel({
+          items: 6,
+          loop: true,
+          margin: 27,
+          autoWidth: true
+      });
+
+      $('.showlaxy-main-block__container-animate-next').click(function() {
+          owl3.trigger('next.owl.carousel', [300]);
       })
